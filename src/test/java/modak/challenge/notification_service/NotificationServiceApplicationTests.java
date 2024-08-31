@@ -1,10 +1,10 @@
-package modak.challenge.notification.service;
+package modak.challenge.notification_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class NotificationServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

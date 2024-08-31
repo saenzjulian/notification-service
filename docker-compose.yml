@@ -1,13 +1,11 @@
-version: '3.5'
-
 services:
   api:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: modak/notification.api
+    image: modak/notification-service
     ports:
-      - '8080:8080'
+      - '8081:8081'
     depends_on:
       -  db
     environment:

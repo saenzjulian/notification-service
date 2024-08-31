@@ -13,7 +13,7 @@ FROM eclipse-temurin:21-jdk-alpine
 
 COPY --from=build /home/app/target/*.jar app.jar
 
-EXPOSE 8080
+EXPOSE 8081
 
 #
 # Set time zone

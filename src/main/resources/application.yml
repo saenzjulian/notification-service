@@ -1,0 +1,30 @@
+# app listener port
+server:
+  port: 8081
+
+spring:
+  application:
+    name: notification-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notificationdb
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+# logging (dev env)
+logging:
+  pattern:
+    correlation: '[%X{traceId:-}-%X{spanId:-}] [%X{tenantId:-}] '
+  level:
+    org:
+      springframework:
+        web: TRACE
+      #root: debug
+      flywaydb: DEBUG
