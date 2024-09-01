@@ -32,7 +32,7 @@ public class NotificationImpl extends PostgreSQLImpl<NotificationEntity, Long> i
 
     @Override
     public Optional<NotificationDetailOutput> manage(NotificationDetailInput input) {
-        if(!rateLimiter.isAllowed(input.getType(), input.getUsername())){
+        if(!rateLimiter.isAllowed(input.getType().getType(), input.getUsername())){
             throw new RateLimitExceededException("Rate limit exceeded");
         }
 

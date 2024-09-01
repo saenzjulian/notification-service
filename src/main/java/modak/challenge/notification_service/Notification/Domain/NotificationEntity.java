@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import modak.challenge.notification_service.Notification.Domain.Enum.RateLimitRules;
 import modak.challenge.notification_service.Notification.Infrastructure.Ports.NotificationDetailOutput;
 
 import java.time.Instant;
@@ -19,7 +20,7 @@ public class NotificationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String type;
+    private RateLimitRules type;
     private String username;
     private String message;
     private Instant instant;
