@@ -1,9 +1,6 @@
 package modak.challenge.notification_service.Notification.Domain.Enum;
 
-import lombok.Data;
 import lombok.Getter;
-
-import java.time.Duration;
 
 @Getter
 public enum RateLimitRules {

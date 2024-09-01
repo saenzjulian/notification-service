@@ -7,7 +7,6 @@ import modak.challenge.notification_service.Notification.Application.Service.INo
 import modak.challenge.notification_service.Notification.Infrastructure.Ports.NotificationDetailInput;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
